@@ -27,6 +27,10 @@ set nu "Activate line numbering
 
 " Search
 set hlsearch  " highlight search
+
+" remove current highlight with enter
+:nnoremap <CR> :nohlsearch<CR><CR> 
+
 set incsearch  " Incremental search, search as you type
 set ignorecase " Ignore case when searching 
-set smartcase
+set smartcase 
