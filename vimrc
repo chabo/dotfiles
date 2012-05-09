@@ -21,6 +21,9 @@ set tabstop=2
 set expandtab
 set showtabline=2
 
+" Always show the statusbar
+set laststatus=2
+
 " Visual
 set showmatch  " Show matching brackets.
 set nu "Activate line numbering
