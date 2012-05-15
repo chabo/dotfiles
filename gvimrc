@@ -6,6 +6,7 @@
 " This is a work in progress.  If you feel so inclined, please help me improve
 " this file.
 
+set fullscreen
 
 " Make sure the '<' and 'C' flags are not included in 'cpoptions', otherwise
 " <CR> would not be recognized.  See ":help 'cpoptions'".
@@ -17,14 +18,7 @@ set guifont=Menlo:h14
 "autocomplete and look at filestructure with TAB
 set wildmode=list:longest 
 
-" Binder cmd+alt+pilar till byta tab  - funkade tydligen inte
-":macm Window.Previous\ Tab  key=<M-D-Left>
-":macm Window.Next\ Tab  key=<M-D-Right>
-""" här slutade Calle att skriva
-
-"
 " Global default options
-"
 
 if !exists("syntax_on")
   syntax on
@@ -48,7 +42,7 @@ set printexpr=system('open\ -a\ Preview\ '.v:fname_in)\ +\ v:shell_error
 " adding the line
 "   let macvim_skip_cmd_opt_movement = 1
 " to the user .vimrc
-"
+
 if !exists("macvim_skip_cmd_opt_movement")
   no   <D-Left>       <Home>
   no!  <D-Left>       <Home>
