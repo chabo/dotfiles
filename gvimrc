@@ -6,7 +6,9 @@
 " This is a work in progress.  If you feel so inclined, please help me improve
 " this file.
 
-set fullscreen
+" this baby starts macvim in fullscreen mode
+" set fullscreen
+
 
 " Make sure the '<' and 'C' flags are not included in 'cpoptions', otherwise
 " <CR> would not be recognized.  See ":help 'cpoptions'".

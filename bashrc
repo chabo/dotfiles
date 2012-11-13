@@ -1,1 +1,1 @@
-export PS1="\d\t\u\W"	
+export PS1="\d \t \u \W "	
