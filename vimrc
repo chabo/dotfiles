@@ -23,6 +23,11 @@ syntax on
 " always set autoindenting on
 set autoindent
 
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 " set textwidth to 100 characters for all textfiles
 autocmd FileType text setlocal textwidth=100
 

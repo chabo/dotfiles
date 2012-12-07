@@ -1,4 +1,4 @@
-PATH=/Users/Calle/.rvm/gems/ruby-1.9.3-p194/bin:/Users/Calle/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/Calle/.rvm/bin:/usr/bin:/bin:~/bin:usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin
+PATH=/Users/Calle/.rvm/bin:/usr/bin:/bin:~/bin:usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin/env
 export PATH
 
 #Does some magic to the shell (changes the text at lineprompt)
