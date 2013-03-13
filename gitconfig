@@ -12,3 +12,5 @@
     com = commit
     ch = checkout
     br = branch
+[color]
+    ui = true
