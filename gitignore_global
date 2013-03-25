@@ -1,5 +1,8 @@
 #Ignore swap-files created by MacVim
 *.swp
 
+#Ignore sass-cache files
+.sass-cache/
+
 #Ignore DS_store files
 .DS_Store

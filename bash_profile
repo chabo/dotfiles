@@ -5,6 +5,7 @@ alias ls="ls -F"
 #Does some magic to the shell (changes the text at lineprompt)
 export PS1=" \w $ "
 
+alias subl="~/dotfiles/subl"
 
 #Alias for Subversion
 alias svc="svn checkin"

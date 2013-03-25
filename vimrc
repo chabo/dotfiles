@@ -25,10 +25,6 @@ syntax on
 " always set autoindenting on
 set autoindent
 
-set smartindent
-set tabstop=2
-set shiftwidth=2
-set expandtab
 
 " set textwidth to 100 characters for all textfiles
 autocmd FileType text setlocal textwidth=100
@@ -47,10 +43,13 @@ set softtabstop=2
 set shiftwidth=2
 set tabstop=2
 set expandtab
+set smartindent
+
 set showtabline=2
 
 " Always show the statusbar
 set laststatus=2
+
 
 " Visual
 set showmatch  " Show matching brackets.
