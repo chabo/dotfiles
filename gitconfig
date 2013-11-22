@@ -7,6 +7,7 @@
 [core]
   quir
 	excludesfile = /Users/calle/.gitignore_global
+	quotepath = false
 [alias]
     st = status
     com = commit
@@ -16,3 +17,5 @@
     ui = true
 [format]
     pretty = oneline
+[credential]
+	helper = osxkeychain
