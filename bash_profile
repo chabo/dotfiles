@@ -1,18 +1,18 @@
 PATH=/Users/Calle/.rvm/bin:/usr/local/bin:/bin:~/bin:usr/sbin:/sbin:/usr/bin:/usr/local/git/bin:/usr/bin/env
 export PATH
 
-parse_git_branch () {
-    git name-rev HEAD 2> /dev/null | sed 's#HEAD\ \(.*\)# (git::\1)#'
-}
-parse_svn_branch() {
-    parse_svn_url | sed -e 's#^'"$(parse_svn_repository_root)"'##g' | awk '{print " svn::"$1"" }'
-}
-parse_svn_url() {
-    svn info 2>/dev/null | sed -ne 's#^URL: ##p'
-}
-parse_svn_repository_root() {
-    svn info 2>/dev/null | sed -ne 's#^Repository Root: ##p'
-}
+# parse_git_branch () {
+#     git name-rev HEAD 2> /dev/null | sed 's#HEAD\ \(.*\)# (git::\1)#'
+# }
+# parse_svn_branch() {
+#     parse_svn_url | sed -e 's#^'"$(parse_svn_repository_root)"'##g' | awk '{print " svn::"$1"" }'
+# }
+# parse_svn_url() {
+#     svn info 2>/dev/null | sed -ne 's#^URL: ##p'
+# }
+# parse_svn_repository_root() {
+#     svn info 2>/dev/null | sed -ne 's#^Repository Root: ##p'
+# }
 
 BLACK="\[\033[0;38m\]"
 RED="\[\033[0;31m\]"
@@ -22,7 +22,8 @@ GREEN="\[\033[0;32m\]"
 
 alias ls="ls -F"
 #changes the text at lineprompt
-export PS1=" \W \$(parse_svn_branch) $: "
+# export PS1=" \W \$(parse_svn_branch) $: "
+export PS1=" \W \s $: "
 
 alias subl="~/dotfiles/subl"
 
