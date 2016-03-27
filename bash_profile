@@ -1,4 +1,4 @@
-PATH=/Users/Calle/.rvm/bin:/usr/local/bin:/bin:~/bin:usr/sbin:/sbin:/usr/bin:/usr/local/git/bin:/usr/bin/env
+PATH=/bin:/usr/local/bin:~/bin:/usr/sbin:/sbin:/usr/bin:/usr/local/git/bin:/usr/bin/env
 export PATH
 
 # parse_git_branch () {
