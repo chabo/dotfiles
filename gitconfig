@@ -1,6 +1,6 @@
 [core]
   quir
-  excludesfile = /Users/calle/.gitignore_global
+  excludesfile = ~/.gitignore_global
   quotepath = false
 [format]
   pretty = oneline
