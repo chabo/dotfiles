@@ -1,9 +1,3 @@
-[user]
-	name = Carl Hallberg
-	email = carl.chabo@gmail.com
-[github]
-	user = chabo
-	token = 12a88e84232937b3a0f776fe141654ee
 [core]
   quir
 	excludesfile = /Users/calle/.gitignore_global
@@ -19,3 +13,5 @@
     pretty = oneline
 [credential]
 	helper = osxkeychain
+[include]
+  path = gitconfig.local

@@ -6,3 +6,6 @@
 
 #Ignore DS_store files
 .DS_Store
+
+#Ignore local gitconfig
+gitconfig.local
