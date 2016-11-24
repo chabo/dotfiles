@@ -1,13 +1,11 @@
 [core]
-  quir
   excludesfile = ~/.gitignore_global
-  quotepath = false
 [format]
   pretty = oneline
 [credential]
   helper = osxkeychain
 [alias]
-	st = status
+  st = status
   sts = status -s
   co = checkout
 [color]
@@ -16,9 +14,5 @@
   status = auto
   showbranch = auto
   ui = true
-[difftool]
-  prompt = false
-[include]
-  path = ~/.gitconfig.viaplay
 [include]
   path = ~/.gitconfig.local
