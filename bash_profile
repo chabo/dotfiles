@@ -37,9 +37,6 @@ export PS1=" \W \$(parse_git_branch): "
 
 alias subl="~/dotfiles/subl"
 
-#aliases git 
-git config --global alias.st status
-
 #Alias for Subversion
 alias svc="svn checkin"
 alias svu="svn update"
