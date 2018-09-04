@@ -10,7 +10,9 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' 
 }
 
+#changes the text at lineprompt
 #export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\W\[\033[32m\] \$(parse_git_branch)\[\033[00m\] $ "
 
 BLACK="\[\033[0;38m\]"
 RED="\[\033[0;31m\]"
@@ -22,7 +24,7 @@ GREEN="\[\033[0;32m\]"
 alias ls="ls -F" #always list with details
 
 #changes the text at lineprompt
-export PS1=" \W  $(parse_git_branch): "
+#export PS1=" \W  $(parse_git_branch): "
 
 #Use GCC-4.2
 export CC=/usr/local/bin/gcc-4.2
