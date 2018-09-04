@@ -1,4 +1,4 @@
-PATH=/usr/bin:/usr/sbin:/bin:/sbin:$PATH
+PATH=/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin
 export PATH
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -12,10 +12,6 @@ parse_git_branch() {
 
 #export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
-#parse_git_branch () {
-#  git rev-parse --abbrev-ref HEAD 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' 
-#}
-
 BLACK="\[\033[0;38m\]"
 RED="\[\033[0;31m\]"
 RED_BOLD="\[\033[01;31m\]"
@@ -26,10 +22,7 @@ GREEN="\[\033[0;32m\]"
 alias ls="ls -F" #always list with details
 
 #changes the text at lineprompt
-export PS1=" \W \$(parse_git_branch): "
-# export PS1=" \W \s $: "
-
-alias subl="~/dotfiles/subl"
+export PS1=" \W  $(parse_git_branch): "
 
 #Use GCC-4.2
 export CC=/usr/local/bin/gcc-4.2
