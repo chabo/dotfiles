@@ -16,16 +16,6 @@ parse_git_branch() {
 #  git rev-parse --abbrev-ref HEAD 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' 
 #}
 
-# parse_svn_branch() {
-#     parse_svn_url | sed -e 's#^'"$(parse_svn_repository_root)"'##g' | awk '{print " svn::"$1"" }'
-# }
-# parse_svn_url() {
-#     svn info 2>/dev/null | sed -ne 's#^URL: ##p'
-# }
-# parse_svn_repository_root() {
-#     svn info 2>/dev/null | sed -ne 's#^Repository Root: ##p'
-# }
-
 BLACK="\[\033[0;38m\]"
 RED="\[\033[0;31m\]"
 RED_BOLD="\[\033[01;31m\]"
@@ -41,11 +31,6 @@ export PS1=" \W \$(parse_git_branch): "
 
 alias subl="~/dotfiles/subl"
 
-#Alias for Subversion
-alias svc="svn checkin"
-alias svu="svn update"
-alias svs="svn status"
-
 #Use GCC-4.2
 export CC=/usr/local/bin/gcc-4.2
 
@@ -55,3 +40,6 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export NVM_DIR="/Users/caha/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
